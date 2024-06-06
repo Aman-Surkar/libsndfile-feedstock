@@ -1,6 +1,6 @@
 {% set name = "libsndfile" %}
-{% set version = "1.0.31" %}
-{% set sha256 = "a8cfb1c09ea6e90eff4ca87322d4168cdbe5035cb48717b40bf77e751cc02163" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e" %}
 
 package:
     name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url: https://github.com/libsndfile/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.bz2
+    url: https://github.com/libsndfile/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.xz
     sha256: {{ sha256 }}
 
 build:
